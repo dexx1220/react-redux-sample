@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import { getCharacters } from '../../common/api';
-import { getCharacter } from './actions';
+import { getCharacter, getCharacters } from './actions';
 import { connect } from 'react-redux';
 import './styles.css';
 

@@ -1,3 +1,4 @@
+import { charactersUrl } from '../../common/constants'
 import axios from 'axios'
 
 const baseUrl = 'https://rickandmortyapi.com/api/character'
@@ -24,4 +25,8 @@ export const getCharacter = (id) => dispatch => {
     .catch(err => {
       dispatch(fetchCharacterFailure(err))
     })
+}
+
+export const getCharacters = () => {
+  return axios.get(charactersUrl);
 }
