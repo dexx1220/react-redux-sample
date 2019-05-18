@@ -35,7 +35,7 @@ class Characters extends Component {
     const { characters } = this.state
     return (
       <div>
-        <h1>Rick and Morty Characters</h1>
+        <h1>Click on any charcter below</h1>
         {!!characters.length && characters.map((c) => {
           return <Card data={c} handleClick={() => this.props.getCharacter(c.id)} />
         })}
